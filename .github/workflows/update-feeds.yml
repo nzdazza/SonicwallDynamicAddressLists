@@ -26,7 +26,7 @@ jobs:
 
       - name: Commit changed feeds
         run: |
-          if git diff --quiet -- feeds/; then
+          if [ -z "$(git status --porcelain -- feeds/)" ]; then
             echo "No feed changes"
             exit 0
           fi

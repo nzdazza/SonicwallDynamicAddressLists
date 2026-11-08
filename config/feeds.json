@@ -1,0 +1,14 @@
+{
+  "feeds": [
+    {
+      "name": "microsoft-365-copilot-mcp",
+      "source": "https://learn.microsoft.com/en-us/microsoft-365/copilot/connectors/media/federated-connectors/static-egress-ip-addresses.json",
+      "source_format": "json_array",
+      "output": "feeds/microsoft-365-copilot-mcp.txt",
+      "address_family": "ipv4",
+      "collapse_cidrs": true,
+      "minimum_entries": 50,
+      "maximum_entries": 250
+    }
+  ]
+}
